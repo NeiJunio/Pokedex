@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Detail</title>
+
+    <link rel="stylesheet" href="assets/css/pokemon-detail.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="modal">
+            <div class="header-modal">
+                <img src="assets/icons/arrow-left.svg" alt="arrow-left">
+                <span class="number-pokemon" id="number-pokemon">#001</span>
+                <img src="assets/icons/heart-favorite.svg" alt="heart-favorite">
+            </div>
+
+            <div class="feature">
+                <img src="assets/icons/chevron-left.svg" alt="chevron-left">
+                <img src="assets/icons/chevron-right.svg" alt="chevron-right">
+            </div>
+
+            <span class="name-pokemon" id="name-pokemon">nome do pokemom</span>
+
+            <div class="pokemons-types">
+                <ol class="types">
+                    <li class="type ${type}">tipo</li>
+                    <li class="type ${type}">tipo</li>
+                    <!-- <li class="type ${type}">tipo</li> -->
+                </ol>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,353 @@
+/* Estilização Modal de Detalhes */
+.modal-content {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    z-index: 999;
+    inset: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    width: 25%;
+    height: 40rem;
+    background-color: rgb(21, 18, 76);
+    margin: auto;
+    border: 3px solid rgb(160, 160, 160);
+    border-radius: 1.5rem;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.modal-header {
+    width: 100%;
+    padding: 0 .3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-header .arrow-icon {
+    cursor: pointer;
+}
+
+.modal-header .number-pokemon {
+    width: 6rem;
+    border-radius: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.65rem;
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.modal-header .heart-favorite{
+    cursor: pointer;
+}
+
+.modal-body {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    margin: 10px auto;
+    border-radius: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid rgb(219, 219, 219);
+    position: relative;
+}
+
+.modal-info {
+    width: 100%;
+    height: 50%;
+    padding: 15px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+}
+
+.modal-info .name {
+    color: #fff;
+    margin-bottom: .25rem;
+    font-size: clamp(1.5rem, 1.3929rem + 0.5714vw, 2rem);    text-transform: capitalize;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.modal-info .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-info .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.modal-info .detail .types .type {
+    height: 2rem;
+    width: 6.5rem;
+    border: 2px solid #000;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0;
+    box-shadow: 1.5px 1px 3px 1px rgba(0, 0, 0, 0.51);
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.07rem;
+}
+
+.detail-img {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-info .detail-img img {
+    max-width: 55%;
+    filter: drop-shadow(3px 3px 5px #000000);
+}
+
+.hr {
+    width: 90%;
+    border: 1px solid;
+    color: #bcbcbc;
+}
+
+.modal-statistic {
+    width: 100%;
+    height: 60%;
+    padding: 15px;
+    border-radius: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.modal-statistic .statistic-row {
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+.modal-statistic .statistic-row .statistic-label {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.modal-statistic .statistic-row .statistic-value {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ .statistic-progressBar{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    justify-content: start;
+}
+
+.statistic-progressBar  .progress-background{
+    width: 100%;
+    height: 30%;
+    border-radius: 2rem;
+    background-color: rgb(199, 199, 199);
+}
+
+.modal-statistic .statistic-row .statistic-progressBar .progress{
+ width: 100%;
+ height: 100%;
+ border-radius: 2rem;
+ 
+}
+
+.modal-footer {
+    width: 100%;
+    height: 3rem;
+    border-radius: 1.5rem;
+    display: flex;
+    /* background-color: rgb(255, 0, 230); */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-footer .close {
+    width: 10rem;
+    height: 80%;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid rgba(196, 5, 5, 0.804);
+    background-color: rgb(255, 0, 0);
+}
+
+
+.name-pokemon {
+    width: 18rem;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: .12rem;
+}
+
+.pokemons-types {
+    background-color: red;
+    justify-content: center;
+    width: 50%;
+    margin: 15px;
+    display: flex;
+
+}
+
+.pokemons-types .types {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.pokemons-types .types .type {
+    list-style: none;
+    margin: 0;
+    font-size: 1.2rem;
+    padding: 4px 16px;
+    border: 1px solid #000;
+    border-radius: 60px;
+}
+
+
+@media screen and (max-width: 1559px) {
+    .modal{
+        width: 30%;
+        height: 40rem;
+    }
+}
+
+@media screen and (max-width: 1369px) {
+    .modal{
+            width: 35%;
+            height: 40rem;
+    }
+}
+@media screen and (max-width: 1099px) {
+    .modal{
+        width: 40%;
+        height: 40rem;
+    }
+
+    .modal-footer .close {
+        width: 9rem;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .modal{
+            width: 50%;
+            height: 40rem;
+    }
+
+    .modal-header .number-pokemon {
+        width: 5.8rem;
+    }
+
+    .modal-footer .close {
+        width: 8.75rem;
+        height: 77.5%;
+    }
+}
+
+@media screen and (max-width: 729px) {
+    .modal{
+        width: 60%;
+        height: 40rem;
+    }
+
+    .modal-header .number-pokemon {
+        width: 5.6rem;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .modal{
+        width: 70%;
+        height: 40rem;
+    }
+
+    .modal-header .number-pokemon {
+        width: 5.4rem;
+    }
+
+    .modal-footer .close {
+        width: 8.5rem;
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .modal{
+        width: 80%;
+        height: 40rem;
+    }
+
+    .modal-header .number-pokemon {
+        width: 5.2rem;
+    }
+
+    .modal-footer .close {
+        width: 8.25rem;
+        height: 72.5%;
+    }
+}
+
+@media screen and (max-width: 439px) {
+    .modal{
+        width: 90%;
+        height: 35rem;
+    }
+
+    .modal-header .number-pokemon {
+        width: 5rem;
+    }
+
+    .modal-statistic {
+        padding: 2px;
+    }
+
+    .modal-footer .close {
+        width: 8rem;
+        height: 70%;
+    }
+}
